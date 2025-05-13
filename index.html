@@ -1,0 +1,96 @@
+OCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>With Love</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #fffaf0;
+      font-family: 'Open Sans', sans-serif;
+      padding: 50px;
+      max-width: 700px;
+      margin: 50px auto;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      color: #333;
+    }
+
+    .heart {
+      font-size: 40px;
+      color: red;
+      text-align: center;
+      margin-bottom: 20px;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    .photo {
+      display: block;
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 20px auto;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      animation: fadein 2s ease forwards;
+    }
+
+    .letter {
+      font-size: 18px;
+      white-space: pre-line;
+      border-right: 2px solid #d6336c;
+      width: fit-content;
+      overflow: hidden;
+      animation: typing 6s steps(80, end), blink 0.7s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    .signature {
+      font-family: 'Great Vibes', cursive;
+      font-size: 30px;
+      text-align: right;
+      margin-top: 50px;
+      color: #d6336c;
+      opacity: 0;
+      animation: fadein 2s ease 6s forwards;
+    }
+
+    @keyframes fadein {
+      to { opacity: 1 }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="heart">♥</div>
+
+  <img src="us.jpg" alt="Us" class="photo">
+
+  <div class="letter">
+    Hey Shahin,
+
+    I just wanted to say something simple but true.
+
+    You make me smile, feel safe, and feel loved.  
+    I’m so lucky to have you in my life.  
+    Thank you for being mine.
+  </div>
+
+  <div class="signature">
+    Rizwana ♥
+  </div>
+
+</body>
+</html>
